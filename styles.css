@@ -1,0 +1,110 @@
+:root {
+  --bg: #f8fbff;
+  --ink: #17324d;
+  --brand: #ff7a59;
+  --brand-dark: #e95d3c;
+  --card: #ffffff;
+  --shadow: 0 12px 30px rgba(10, 40, 80, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Comic Sans MS", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #eaf6ff 0%, var(--bg) 45%);
+}
+
+.hero {
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: radial-gradient(circle at top, #bde6ff, #8cc9ff 45%, #66b3ff 100%);
+}
+
+.hero__content {
+  max-width: 750px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  margin: 0.2rem 0 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero__button {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: var(--brand);
+  padding: 0.8rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero__button:hover {
+  transform: translateY(-2px);
+  background: var(--brand-dark);
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 2.5rem auto 3rem;
+}
+
+.animals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__content {
+  padding: 1rem 1rem 1.2rem;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.4rem;
+  color: #244f75;
+  font-weight: 600;
+}
